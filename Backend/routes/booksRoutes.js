@@ -4,12 +4,13 @@ import { Book } from "../models/bookModels.js"; //using bookModels
 const router = express.Router();
 
 //Route for save a new book
-router.post('/', async (request, response) => {
+router.post('/tbr', async (request, response) => {
     try{
         if(                                         //validation for our input which comes from request.body
             !request.body.title ||
             !request.body.author ||
-            !request.body.publishYear
+            !request.body.publishYear ||
+            !request.body.genre
         ) {                                        //if required fields are not in requested body return a response with status of 300
             return response.status(400).send({     //and send a message for client
                 message: 'Send all required fields: title, author, publishYear',
@@ -20,6 +21,7 @@ router.post('/', async (request, response) => {
             title: request.body.title,
             author: request.body.author,
             publishYear: request.body.publishYear,
+            genre: request.body.genre,
         };
 
         const books  = await Book.create(newBook);   //saving result to a book variable
@@ -33,7 +35,7 @@ router.post('/', async (request, response) => {
 });
 
 //Route to get all book from database
-router.get('/', async (request, response) => {
+router.get('/tbr', async (request, response) => {
     try{
         const books  = await Book.find({});   //passed Book.find an empty object to get list of all the books from database and save it in book variable
 
@@ -67,7 +69,8 @@ router.put('/:id', async (request, response) => {
       if (
         !request.body.title ||
         !request.body.author ||
-        !request.body.publishYear
+        !request.body.publishYear||
+        !request.body.genre
       ) {
         return response.status(400).send({
           message: 'Send all required fields: title, author, publishYear',

@@ -22,7 +22,7 @@ app.use(cors());
 //     })
 // );
 
-app.get('/', (request, response) =>{                //get is http method that used for getting resource from server
+app.get('/tbr', (request, response) =>{                //get is http method that used for getting resource from server
     console.log(request)
     return response.status(236).send('Welcome to my TBR Books');    //http route
 });  

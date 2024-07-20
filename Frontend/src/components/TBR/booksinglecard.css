@@ -1,0 +1,83 @@
+/* bookSingleCardStyles.css */
+
+/* Container for each book card */
+.book-single-card {
+    border: 2px solid #6b7280; /* Gray border */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.book-single-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Year badge styling */
+.book-single-card-year {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: rgb(8, 131, 149); 
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+/* Text styles */
+.book-single-card-id {
+    color: #6b7280; /* Gray-500 */
+    margin: 0.5rem 0;
+}
+
+.book-single-card-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #333; /* Darker color for title */
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+.book-single-card-author {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #333; /* Darker color for author */
+    margin: 0.5rem 0;
+}
+
+/* Icons styles */
+.book-single-card-icon {
+    color: rgb(8, 131, 149);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.book-single-card-icon:hover {
+    color: rgb(7, 25, 82); /* Black on hover */
+}
+
+.book-single-card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+/* Specific icon styles */
+.book-single-card-info {
+    color: #10b981; /* Green-500 for info icon */
+}
+
+.book-single-card-show {
+    color: #1d4ed8; /* Blue-800 for show icon */
+}
+
+.book-single-card-show:hover {
+    color: rgb(7, 25, 82); /* Black on hover */
+}

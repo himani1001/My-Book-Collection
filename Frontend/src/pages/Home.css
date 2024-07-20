@@ -1,0 +1,41 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 15px 0 15px 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(235, 244, 246);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.text-1, .text-2 {
+    font-size: 3rem; 
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgb(7, 25, 82);
+}
+
+
+.button {
+    background: rgb(55, 183, 195);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 1rem;
+    transition: background 0.2s ease;
+}
+
+.button:hover {
+    background: rgb(7, 25, 82);
+}

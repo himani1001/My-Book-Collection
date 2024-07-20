@@ -1,0 +1,24 @@
+.back-button-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .back-button-link {
+    background-color: rgb(55, 183, 195); /* Sky-800 color */
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .back-button-link:hover {
+    background-color: rgb(7, 25, 82); /* Darker shade for hover effect */
+  }
+  
+  .back-button-icon {
+    font-size: 1.5rem; /* Text-2xl size */
+  }
+  

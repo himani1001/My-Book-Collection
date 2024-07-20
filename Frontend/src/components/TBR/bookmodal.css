@@ -1,0 +1,66 @@
+.modal-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    width: 600px;
+    max-width: 100%;
+    height: 400px;
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.close-icon {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    font-size: 2rem; 
+    color: #e53e3e; 
+    cursor: pointer;
+}
+
+.publish-year {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    background: #feb2b2; 
+    border-radius: 0.5rem;
+}
+
+.book-id {
+    margin: 0.5rem 0;
+    color: #6b7280; 
+}
+
+.book-details {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.icon {
+    font-size: 1.5rem; 
+    color: #feb2b2;
+}
+
+.genre-label {
+    margin-top: 1rem;
+}
+
+.genre {
+    margin: 0.5rem 0;
+}
