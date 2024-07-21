@@ -1,8 +1,10 @@
 import express, { response } from "express";
 import{ PORT, mongoDBURL } from "./config.js";
 import mongoose from "mongoose";
-import { Book } from './models/bookModels.js';
+import { Book } from './models/tbrModels.js';
+import { BookRead } from "./models/readModels.js";
 import booksRoutes from './routes/booksRoutes.js'
+import readBooksRoutes from "./routes/readBooksRoutes.js";
 import cors from 'cors';
 
 const app = express();
@@ -25,9 +27,18 @@ app.use(cors());
 app.get('/tbr', (request, response) =>{                //get is http method that used for getting resource from server
     console.log(request)
     return response.status(236).send('Welcome to my TBR Books');    //http route
+}); 
+
+
+app.get('/read', (request, response) =>{                //get is http method that used for getting resource from server
+    console.log(request)
+    return response.status(236).send('Welcome to my TBR Books');    //http route
 });  
 
 app.use('/books', booksRoutes);
+
+app.use('/readBooks', readBooksRoutes);
+
 
 mongoose
     .connect(mongoDBURL)

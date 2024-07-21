@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { BsInfoCircle } from 'react-icons/bs';
 import BookTableRead from '../components/Read/BookTableRead';
 import BooksCardRead from '../components/Read/BooksCardRead';
+import './Table.css';
 
 const ToBeRead = () => {
   const [books, setBooks] = useState([]);
@@ -15,7 +16,7 @@ const ToBeRead = () => {
     setLoading(true);
     console.log('Fetching data...');
     axios
-      .get(`http://localhost:5556/books/read`)
+      .get(`http://localhost:5556/readBooks/read`)
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
@@ -27,27 +28,32 @@ const ToBeRead = () => {
   }, []);
 
   return (
-    <div className='p-4'>
-      <div className='flex justify-center items-center gap-x-4'>
-        <button className='bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg'
-          onClick={() => setShowType('table')}>
+    <div className='container'>
+      <div className='button-group'>
+      <button className='button' >
+          <Link to={`/`}>
+            Home
+          </Link>
+        </button>
+        <button className='button' onClick={() => setShowType('table')}>
           Table
         </button>
-        <button className='bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg'
-          onClick={() => setShowType('card')}>
+        <button className='button' onClick={() => setShowType('card')}>
           Card
         </button>
       </div>
-      <div className='flex justify-between items-center'>
-        <h1 className='text-3xl my-8'>Read</h1>
+      <div className='header'>
+        <h1 className='title'>My To Be Read</h1>
       </div>
-      {loading ?
-        (<Spinner />
-        ) : showType === 'table' ? (
+      {loading ? (
+        <div className='spinner-container'>
+          <Spinner />
+        </div>
+      ) : showType === 'table' ? (
         <BookTableRead books={books} />
       ) : (
-      <BooksCardRead books={books} />)
-      }
+        <BooksCardRead books={books} />
+      )}
     </div>
   );
 };

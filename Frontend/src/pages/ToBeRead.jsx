@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Spinner from '../components/Spinner';
 import { Link } from 'react-router-dom';
-import { BsInfoCircle } from 'react-icons/bs';
-import BooksTable from '../components/TBR/BooksTable';
-import BooksCard from '../components/TBR/BooksCard';
-import './ToBeRead.css'; 
+import Spinner from '../components/Spinner';
+import BooksTable from '../components/TBR/BooksTableTBR';
+import BooksCard from '../components/TBR/BooksCardTBR';
+import './Table.css';
 
 const ToBeRead = () => {
   const [books, setBooks] = useState([]);
@@ -30,6 +29,11 @@ const ToBeRead = () => {
   return (
     <div className='container'>
       <div className='button-group'>
+      <button className='button' >
+          <Link to={`/`}>
+            Home
+          </Link>
+        </button>
         <button className='button' onClick={() => setShowType('table')}>
           Table
         </button>

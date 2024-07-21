@@ -1,5 +1,5 @@
 import BookSingleCardRead from './BookSingleCardRead';
-import '../TBR/bookscard.css'
+import '../Style/bookscard.css'
 
 const BooksCardRead = ({ books }) => {
   return (

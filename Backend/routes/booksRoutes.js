@@ -1,5 +1,5 @@
 import express from "express";
-import { Book } from "../models/bookModels.js"; //using bookModels
+import { Book } from "../models/tbrModels.js"; //using bookModels
 
 const router = express.Router();
 
@@ -50,7 +50,7 @@ router.get('/tbr', async (request, response) => {
 });
 
 //Route to get all book from database by id
-router.get('/:id', async(request, response) => {
+router.get('/tbr/:id', async(request, response) => {
     try{
         const { id } = request.params;
 
@@ -64,7 +64,7 @@ router.get('/:id', async(request, response) => {
 });
 
 //Route for update a book
-router.put('/:id', async (request, response) => {
+router.put('/tbr/:id', async (request, response) => {
     try {
       if (
         !request.body.title ||
@@ -93,7 +93,7 @@ router.put('/:id', async (request, response) => {
   });
  
 //Route for delete a book
-router.delete('/:id', async(request, response) => {
+router.delete('/tbr/:id', async(request, response) => {
     try{
         const { id } = request.params;
 
@@ -109,5 +109,6 @@ router.delete('/:id', async(request, response) => {
         response.status(500).send({message: error.message});
     }
 });
+
 
 export default router;

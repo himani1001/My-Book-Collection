@@ -5,7 +5,7 @@ import BackButton from '../components/TBR/BackButtonTBR';
 import Spinner from '../components/Spinner';
 import './showBook.css';
 
-const ShowTBRBook = () => {
+const ShowReadBook = () => {
   const [books, setBooks] = useState({});
   const [loading, setLoading] = useState(false);
   const { id } = useParams();
@@ -13,7 +13,7 @@ const ShowTBRBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5556/books/tbr/${id}`)
+      .get(`http://localhost:5556/readBooks/read/${id}`)
       .then((response) => {
         setBooks(response.data);
         setLoading(false);
@@ -66,4 +66,4 @@ const ShowTBRBook = () => {
   );
 }
 
-export default ShowTBRBook;
+export default ShowReadBook;

@@ -1,7 +1,7 @@
 import { BiUserCircle } from 'react-icons/bi';
 import { PiBookOpenTextLight } from 'react-icons/pi';
 import { AiOutlineClose } from 'react-icons/ai';
-import '../TBR/bookmodal.css'
+import '../Style/bookmodal.css'
 
 const BookModalRead = ({ books, onClose }) => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BsInfoCircle } from 'react-icons/bs';
-import './bookstable.css';
+import '../Style/bookstable.css';
 
 const BooksTable = ({ books }) => {
   return (
@@ -30,7 +30,7 @@ const BooksTable = ({ books }) => {
                 <td className='max-md:hidden'>{book.publishYear}</td>
                 <td>
                   <div className='flex justify-center'>
-                    <Link to={`/books/details/${book._id}`}>
+                    <Link to={`/books/tbr/${book._id}`}>
                       <BsInfoCircle className='icon' />
                     </Link>
                   </div>

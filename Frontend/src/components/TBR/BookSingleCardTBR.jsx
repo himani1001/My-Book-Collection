@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { BsInfoCircle } from 'react-icons/bs';
 import { BiUserCircle, BiShow } from 'react-icons/bi';
 import { PiBookOpenTextLight } from 'react-icons/pi';
-import BookModal from './BookModal';
-import './booksinglecard.css'; // Import the custom CSS file
+import BookModal from './BookModalTBR';
+import '../Style/booksinglecard.css';
 
 const BookSingleCard = ({ books }) => {
     const [showModal, setShowModal] = useState(false);

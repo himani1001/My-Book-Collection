@@ -3,8 +3,8 @@ import { BsInfoCircle } from 'react-icons/bs';
 import { BiUserCircle, BiShow } from 'react-icons/bi';
 import { PiBookOpenTextLight } from 'react-icons/pi';
 import { useState } from 'react';
-import BookModal from './BookModalRead';
-import '../TBR/booksinglecard.css'
+import BookModalRead from './BookModalRead'
+import '../Style/booksinglecard.css'
 
 const BookSingleCardRead = ({ books }) => {
     const [showModal, setShowModal] = useState(false);

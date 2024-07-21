@@ -1,6 +1,6 @@
 import React from 'react';
-import BookSingleCard from './BookSingleCard';
-import './bookscard.css';
+import BookSingleCard from './BookSingleCardTBR';
+import '../Style/bookscard.css';
 
 const BooksCard = ({ books }) => {
   return (
