@@ -3,10 +3,10 @@ import { BsInfoCircle } from 'react-icons/bs';
 import { BiUserCircle, BiShow } from 'react-icons/bi';
 import { PiBookOpenTextLight } from 'react-icons/pi';
 import { useState } from 'react';
-import BookModalRead from './BookModalRead'
+import BookModalCr from './BookModalCr'
 import '../Style/booksinglecard.css'
 
-const BookSingleCardRead = ({ books }) => {
+const BookSingleCardCr = ({ books }) => {
     const [showModal, setShowModal] = useState(false);
     return (
         <div className='book-single-card'>
@@ -32,11 +32,11 @@ const BookSingleCardRead = ({ books }) => {
             </div>
             {
                 showModal && (
-                    <BookModalRead books={books} onClose={() => setShowModal(false)} Genre={books.genre} />
+                    <BookModalCr books={books} onClose={() => setShowModal(false)} Genre={books.genre} />
                 )
             }
         </div>
     )
 }
 
-export default BookSingleCardRead
+export default BookSingleCardCr
