@@ -3,7 +3,7 @@ import { PiBookOpenTextLight } from 'react-icons/pi';
 import { AiOutlineClose } from 'react-icons/ai';
 import '../Style/bookmodal.css'
 
-const BookModalRead = ({ books, onClose }) => {
+const BookModalCr = ({ books, onClose }) => {
     return (
         <div className="modal-overlay" onClick={onClose}>
             <div
@@ -35,4 +35,4 @@ const BookModalRead = ({ books, onClose }) => {
     )
 }
 
-export default BookModalRead
+export default BookModalCr

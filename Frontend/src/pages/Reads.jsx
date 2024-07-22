@@ -43,7 +43,7 @@ const ToBeRead = () => {
         </button>
       </div>
       <div className='header'>
-        <h1 className='title'>My To Be Read</h1>
+        <h1 className='title'>My Read Books</h1>
       </div>
       {loading ? (
         <div className='spinner-container'>
