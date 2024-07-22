@@ -13,7 +13,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "mongoose": "^8.4.1",
+    "mongoose": "^8.5.1",
     "nodeman": "^1.1.2",
     "nodemon": "^3.1.3"
   },
