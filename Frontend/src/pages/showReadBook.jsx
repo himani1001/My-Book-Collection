@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import BackButton from '../components/TBR/BackButtonTBR';
+import BackButton from '../components/Read/BackButtonRead';
 import Spinner from '../components/Spinner';
 import './showBook.css';
 

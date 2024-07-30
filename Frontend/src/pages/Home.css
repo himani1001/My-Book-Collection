@@ -43,3 +43,15 @@ body, html {
 .button:hover {
     background: rgb(7, 25, 82);
 }
+
+.row-img {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.img {
+    width: 17%;
+    height: auto;
+    border-radius: 8px; 
+}
