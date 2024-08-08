@@ -53,6 +53,7 @@
 .book-single-card-icon {
     color: rgb(8, 131, 149);
     font-size: 2rem;
+    flex-shrink: 0;
     cursor: pointer;
     transition: color 0.2s ease;
 }

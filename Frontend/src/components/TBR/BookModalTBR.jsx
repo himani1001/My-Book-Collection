@@ -19,11 +19,11 @@ const BookModal = ({ books, onClose }) => {
                     {books.publishYear}
                 </h2>
                 <h4 className='book-id'>{books._id}</h4>
-                <div className='book-details'>
+                <div className='modal-book-details'>
                     <PiBookOpenTextLight className='icon' />
                     <h2 className='my-1'>{books.title}</h2>
                 </div>
-                <div className='book-details'>
+                <div className='modal-book-details'>
                     <BiUserCircle className='icon' />
                     <h2 className='my-1'>{books.author}</h2>
                 </div>
