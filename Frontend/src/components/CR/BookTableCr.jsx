@@ -29,7 +29,7 @@ const BookTableCr = ( { books } ) => {
                 <td className='max-md:hidden'>{book.publishYear}</td>
                 <td>
                   <div className='flex justify-center'>
-                    <Link to={`/cr/${book._id}`}>
+                    <Link to={`/current/cr/${book._id}`}>
                       <BsInfoCircle className='icon' />
                     </Link>
                   </div>

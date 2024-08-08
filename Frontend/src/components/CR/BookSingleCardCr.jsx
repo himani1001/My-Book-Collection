@@ -26,7 +26,7 @@ const BookSingleCardCr = ({ books }) => {
                 <BiShow
                     className='book-single-card-show book-single-card-icon'
                     onClick={() => setShowModal(true)} />
-                <Link to={`/books/details/${books._id}`}>
+                <Link to={`/current/cr/${books._id}`}>
                     <BsInfoCircle className='book-single-card-info book-single-card-icon' />
                 </Link>
             </div>
