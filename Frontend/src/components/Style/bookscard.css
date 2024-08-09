@@ -1,6 +1,6 @@
 .books-card-container {
     display: grid;
-    gap: 1rem; /* Space between grid items */
+    /* gap: 0.5rem; Space between grid items */
     padding: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
 }
