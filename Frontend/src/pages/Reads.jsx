@@ -16,7 +16,7 @@ const ToBeRead = () => {
     setLoading(true);
     console.log('Fetching data...');
     axios
-      .get(`http://localhost:5556/readBooks/read`)
+      .get(`https://my-book-collection-1.onrender.com/readBooks/read`)
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);

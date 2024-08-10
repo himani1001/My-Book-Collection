@@ -13,7 +13,7 @@ const ShowTBRBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5556/books/tbr/${id}`)
+      .get(`https://my-book-collection-1.onrender.com/books/tbr/${id}`)
       .then((response) => {
         setBooks(response.data);
         setLoading(false);

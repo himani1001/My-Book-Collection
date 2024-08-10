@@ -15,7 +15,7 @@ const CurrentReads = () => {
     setLoading(true);
     console.log('Fetching data...');
     axios
-      .get(`http://localhost:5556/current/cr`)
+      .get(`https://my-book-collection-1.onrender.com/current/cr`)
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
