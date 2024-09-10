@@ -9,7 +9,7 @@ import img5 from '../components/Images/img5.jpg';
 import img6 from '../components/Images/img6.jpg';
 
 const Home = () => {
-    const [activeIndex, setActiveIndex] = useState(0); // Index of the active option
+    const [activeIndex, setActiveIndex] = useState(0); 
 
     const handleOptionClick = (index) => {
         setActiveIndex(index);
@@ -33,7 +33,7 @@ const Home = () => {
                         key={index}
                         className={`option ${activeIndex === index ? 'active' : ''}`}
                         style={{ backgroundImage: `url(${image})` }}
-                        onClick={() => handleOptionClick(index)} // Handle click event
+                        onClick={() => handleOptionClick(index)}
                     >
                         <div className="shadow"></div>
                     </div>
