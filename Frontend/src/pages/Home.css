@@ -58,8 +58,9 @@ body, html {
 .option {
     position: relative;
     overflow: hidden;
-    min-width: 60px;
+    min-width: 80px;
     margin: 10px;
+    border-radius: 30px;
     background: var(--defaultBackground, #E6E9ED);
     background-size: cover; /* Ensures the image covers the container */
     background-position: center;
