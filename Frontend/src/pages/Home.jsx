@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import img1 from '../components/Images/img1.jpg';
-import img2 from '../components/Images/img2.jpg';
+// import img2 from '../components/Images/img2.jpg';
 import img3 from '../components/Images/img3.jpg';
 import img4 from '../components/Images/img4.jpg';
 import img5 from '../components/Images/img5.jpg';
 import img6 from '../components/Images/img6.jpg';
+import img7 from '../components/Images/img7.jpg';
 
 const Home = () => {
     const [activeIndex, setActiveIndex] = useState(0); 
@@ -15,7 +16,7 @@ const Home = () => {
         setActiveIndex(index);
     };
 
-    const images = [img1, img2, img3, img4, img5, img6];
+    const images = [img1, img3, img4, img5, img6, img7];
 
     return (
         <div className='container'>
