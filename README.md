@@ -4,7 +4,7 @@
 
 ## 🚀 Description
 
-The Book Collection App is a web application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) that allows users to keep track of books they want to read, are currently reading, and have already read. This project is designed to help book lovers organize and manage their book collections efficiently.
+The Book Collection App is a web application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) that allows me to keep track of books I want to read, are currently reading, and have already read. This project is designed to help me organise and manage my book collection efficiently.
 
 ## Table of Contents
 
